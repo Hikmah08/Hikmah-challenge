@@ -101,14 +101,15 @@ a:hover {
   color: #07aff1;
 }
 /* EXPERIENCE*/
-.card {
+.card-two {
   width: 300px;
   display: flex;
   flex-direction: column;
   border: solid 5px;
   border-color: rgb(240, 248, 255);
   border-radius: 5px;
-  overflow-y: scroll;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .experience {
   padding: 0 15px;
@@ -144,9 +145,8 @@ text-decoration: none;
   background-position: center;
   overflow-y: scroll;
 }
-.heading {
-  text-align: center;
-  font-size: 1.5rem;
+span{
+  color: #0093e9;
 }
 label{
   color: #939393;
@@ -157,17 +157,19 @@ label{
   padding: 2%;
   color: #939393;
   font-size: 14px;
+  width: 100%;
 }
 .phone-number{
 margin-bottom: 5%;
 }
 textarea{
   padding-top: 5%;
+  width: 100%;
 }
 .btn{
   border: 2px solid #80d0c7;
   border-radius: 6%;
-  margin-left: 10%;
+  margin-left: 20%;
   margin-top: 2%;
   background-color: #80d0c7;
   font-size: 1.2rem;

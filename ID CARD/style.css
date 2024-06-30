@@ -1,0 +1,173 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  width: 100vw;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+p,
+i {
+  color: #939393;
+  font-size: 14px;
+}
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+h1,
+h2,
+nav a {
+  color: #333333;
+  font-size: 20px;
+}
+.card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  border: solid 5px;
+  border-color: rgb(240, 248, 255);
+  border-radius: 5px;
+}
+.profile img {
+  border-radius: 50%;
+  width: 100px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px 40px;
+  border-radius: 5px 5px 0 0;
+  background-color: #0093e9;
+  background-image: linear-gradient(
+    180deg,
+    #0093e9 4%,
+    #80d0c7 62%,
+    #ffffff 100%
+  );
+}
+.about {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: white;
+  background-position-x: center;
+  background-position: center;
+}
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.social-media {
+  display: flex;
+  gap: 40px;
+}
+.social-media i {
+  width: 10px;
+}
+nav {
+  padding: 40px 15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+nav a {
+  text-decoration: none;
+}
+#active-nav {
+  border-bottom: #07aff1 2px solid;
+  padding-bottom: 10px;
+}
+a:hover {
+  border-bottom: #07aff1 2px solid;
+  padding-bottom: 10px;
+  color: #07aff1;
+}
+/* EXPERIENCE*/
+.card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  border: solid 5px;
+  border-color: rgb(240, 248, 255);
+  border-radius: 5px;
+  overflow-y: scroll;
+}
+.experience {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: white;
+  background-position-x: center;
+  background-position: center;
+}
+.experience-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.project-links {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-left: 2%;
+}
+.project-links a{
+text-decoration: none;
+}
+/*CONTACT*/
+.contact {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: white;
+  background-position-x: center;
+  background-position: center;
+  overflow-y: scroll;
+}
+.heading {
+  text-align: center;
+  font-size: 1.5rem;
+}
+label{
+  color: #939393;
+  font-size: 14px;
+}
+.name{
+  display: flex;
+  padding: 2%;
+  color: #939393;
+  font-size: 14px;
+}
+.phone-number{
+margin-bottom: 5%;
+}
+textarea{
+  padding-top: 5%;
+}
+.btn{
+  width:8vw;
+  height:5vh;
+  margin-left: 30%;
+  margin-top: 2%;
+  background-color: #07aff1;
+}

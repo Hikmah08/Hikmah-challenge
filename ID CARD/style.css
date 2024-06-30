@@ -110,6 +110,7 @@ a:hover {
   border-radius: 5px;
   margin-top: 20px;
   margin-bottom: 20px;
+  overflow-y: scroll;
 }
 .experience {
   padding: 0 15px;
@@ -147,7 +148,6 @@ text-decoration: none;
   background-color: white;
   background-position-x: center;
   background-position: center;
-  overflow-y: scroll;
 }
 span{
   color: #0093e9;
@@ -171,10 +171,10 @@ textarea{
   width: 100%;
 }
 .btn{
-  border: 2px solid #80d0c7;
+  border: 7px solid #80d0c7;
   border-radius: 6%;
+  background-color: #80d0c7;
   margin-left: 20%;
   margin-top: 2%;
-  background-color: #80d0c7;
   font-size: 1.2rem;
 }

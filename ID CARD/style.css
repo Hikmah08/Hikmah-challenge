@@ -125,6 +125,10 @@ a:hover {
   flex-direction: column;
   gap: 10px;
 }
+.experience-text{
+  line-height: 1.5;
+  font-size: 1rem;
+}
 .project-links {
   display: flex;
   flex-direction: column;

@@ -103,6 +103,7 @@ a:hover {
 /* EXPERIENCE*/
 .card-two {
   width: 300px;
+  max-height:500px;
   display: flex;
   flex-direction: column;
   border: solid 5px;

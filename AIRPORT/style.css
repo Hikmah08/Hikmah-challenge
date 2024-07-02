@@ -47,12 +47,8 @@ nav a {
   align-items: center;
 }
 .form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 50%;
   min-width: 300px;
-  height: 470px;
   border: 2px solid #00ffff;
   background-color: #00ffff;
   opacity: 0.7;

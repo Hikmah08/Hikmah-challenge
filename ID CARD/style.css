@@ -103,7 +103,7 @@ a:hover {
 /* EXPERIENCE*/
 .card-two {
   width: 300px;
-  max-height:500px;
+  max-height: 500px;
   display: flex;
   flex-direction: column;
   border: solid 5px;
@@ -127,7 +127,7 @@ a:hover {
   flex-direction: column;
   gap: 10px;
 }
-.experience-text{
+.experience-text {
   line-height: 1.5;
   font-size: 1rem;
 }
@@ -137,8 +137,8 @@ a:hover {
   gap: 40px;
   margin-left: 2%;
 }
-.project-links a{
-text-decoration: none;
+.project-links a {
+  text-decoration: none;
 }
 /*CONTACT*/
 .contact {
@@ -150,28 +150,28 @@ text-decoration: none;
   background-position-x: center;
   background-position: center;
 }
-span{
+span {
   color: #0093e9;
 }
-label{
+label {
   color: #939393;
   font-size: 14px;
 }
-.name{
+.name {
   display: flex;
   padding: 2%;
   color: #939393;
   font-size: 14px;
   width: 100%;
 }
-.phone-number{
-margin-bottom: 5%;
+.phone-number {
+  margin-bottom: 5%;
 }
-textarea{
+textarea {
   padding-top: 5%;
   width: 100%;
 }
-.btn{
+.btn {
   border: 7px solid #80d0c7;
   border-radius: 6%;
   background-color: #80d0c7;

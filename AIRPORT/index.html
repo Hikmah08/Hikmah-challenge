@@ -1,45 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AIRPORT</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <a>Home</a>
-            <a>Book-Flight</a>
-            <a>Flight-Management</a>
-            <a>More</a>
-        </nav>
-        <p class="profile">Welcome, Hikmot Kasali<img class="profile-photo" src="./IMAGES/profilePhoto.jpg"></p>
+      <nav>
+       <li><a href="#">Home</a></li> 
+       <li><a href="#">Book-Flight</a></li> 
+       <li><a href="#">Flight-Management</a></li> 
+       <li><a href="#">More</a></li> 
+      </nav>
+      <p class="profile">
+        Welcome, Hikmot Kasali<img
+          class="profile-photo"
+          src="./IMAGES/profilePhoto.jpg"
+        />
+      </p>
     </header>
     <div class="container">
-        <div class="form">
-            <div class="row-one">
-            <p>FLYING FROM:<input type="text" placeholder="Lagos"></p>
-            <p>FLYING TO:<input type="text" placeholder="United Kingdom"></p>
+      <div class="form">
+        <div class="row-one">
+          <p>FLYING FROM:<input type="text" placeholder="Lagos" /></p>
+          <p>FLYING TO:<input type="text" placeholder="United Kingdom" /></p>
         </div>
         <div class="row-one">
-            <p>DEPARTING<input type="date"></p>
-            <p>RETURNING<input type="date" ></p>
+          <p>DEPARTING<input type="date" /></p>
+          <p>RETURNING<input type="date" /></p>
         </div>
         <div class="row-one">
-            <p>ADULTS(18+)<input type="number"></p>
-            <p>CHILDREN(10-17)<input type="number" ></p>
+          <p>ADULTS(18+)<input type="number" /></p>
+          <p>CHILDREN(10-17)<input type="number" /></p>
         </div>
         <div class="row-one last">
-            <p>TRAVEL CLASS<select>
-                <option>ANY</option>
-                <option>FIRST CLASS</option>
-                <option>BUSINESS CLASS</option>
-                <option>ECONOMY</option>
-            </select></p>
-            <input type="submit" value="SHOW FLIGHTS" >
+          <p>
+            TRAVEL CLASS<select>
+              <option>ANY</option>
+              <option>FIRST CLASS</option>
+              <option>BUSINESS CLASS</option>
+              <option>ECONOMY</option>
+            </select>
+          </p>
+          <input type="submit" value="SHOW FLIGHTS" />
         </div>
-        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

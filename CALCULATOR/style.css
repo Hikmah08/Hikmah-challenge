@@ -29,25 +29,28 @@
 .row-two {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-self: flex-end;
+  padding: 6% 2% 10% 2%;
 }
-.row-one p {
+ button {
   border: 1px solid #ffffffc3;
   border-radius: 100%;
-  width: 50px;
-  height: 40px;
+  width: 45px;
+  height:40px;
   padding-top: 5px;
   margin-top: 8px;
   margin-bottom: 8px;
   background-color: #ffffffc3;
   color: black;
+  font-size: 1.7rem;
+  font-weight: 700;
 }
-.row-two p {
+.row-two button {
   border: 1px solid #00000077;
   border-radius: 100%;
   width: 45px;
-  height: 35px;
+  height: 45px;
   padding-top: 10px;
   background-color: #00000077;
 }
@@ -60,9 +63,8 @@
 .row-one .signs,
 .row-two .signs {
   border: 1px solid #000000;
-  border-radius: 100%;
-  width: 50px;
-  height: 40px;
   background-color: #ffa600;
   color: white;
+  text-align: center;
+  padding-top: 0;
 }

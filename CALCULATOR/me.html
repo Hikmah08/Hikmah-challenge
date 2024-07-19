@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="text" id="answer"></div>
+      <div class="function">
+        <div class="row-one">
+          <button type="button" id="ac">AC</button>
+          <button type="button" id="arrow">⬅</button>
+          <button type="button" id="percent">%</button>
+          <button
+            type="button"
+            onclick="operator('/')"
+            class="signs"
+            id="divide"
+          >
+            /
+          </button>
+        </div>
+        <div class="row-two">
+          <button type="button" id="seven" onclick="number(7)">7</button>
+          <button type="button" id="eight" onclick="number(8)">8</button>
+          <button type="button" id="nine" onclick="number(9)">9</button>
+          <button
+            type="button"
+            onclick="operator('*')"
+            class="signs"
+            id="multiply"
+          >
+            X
+          </button>
+        </div>
+        <div class="row-two">
+          <button type="button" id="four" onclick="number(4)">4</button>
+          <button type="button" id="five" onclick="number(5)">5</button>
+          <button type="button" id="six" onclick="number(6)">6</button>
+          <button
+            type="button"
+            onclick="operator('-')"
+            class="signs"
+            id="subtract"
+          >
+            -
+          </button>
+        </div>
+        <div class="row-two">
+          <button type="button" id="one" onclick="number(1)">1</button>
+          <button type="button" id="two" onclick="number(2)">2</button>
+          <button type="button" id="three" onclick="number(3)">3</button>
+          <button
+            type="button"
+            onclick="operator('+')"
+            class="signs"
+            id="add"
+            onclick="addition()"
+          >
+            +
+          </button>
+        </div>
+        <div class="row-two">
+          <button type="button" id="zero" onclick="number(0)">0</button>
+          <button type="button" id="hundred" onclick="number('00')">00</button>
+          <button type="button" id="point">.</button>
+          <button
+            type="button"
+            onclick="operator('=')"
+            class="signs"
+            id="equals"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

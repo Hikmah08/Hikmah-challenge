@@ -5,80 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="main.js"></script>
   </head>
   <body>
     <div class="container">
-      <div class="text" id="answer"></div>
+      <div class="text">
+        <p onclick="get('value')"></p>
+      </div>
       <div class="function">
         <div class="row-one">
-          <button type="button" id="ac">AC</button>
-          <button type="button" id="arrow">⬅</button>
-          <button type="button" id="percent">%</button>
-          <button
-            type="button"
-            onclick="operator('/')"
-            class="signs"
-            id="divide"
-          >
-            /
-          </button>
+          <button type="button" onclick="get('AC')">AC</button>
+          <button type="button"  onclick="get('⬅')">⬅</p>
+          <button type="button"  onclick="get('%')">%</button>
+          <button type="button"  class="signs" onclick="get('/')">/</p>
         </div>
         <div class="row-two">
-          <button type="button" id="seven" onclick="number(7)">7</button>
-          <button type="button" id="eight" onclick="number(8)">8</button>
-          <button type="button" id="nine" onclick="number(9)">9</button>
-          <button
-            type="button"
-            onclick="operator('*')"
-            class="signs"
-            id="multiply"
-          >
-            X
-          </button>
+          <button type="button"  onclick="get('7')">7</button>
+          <button type="button"  onclick="get('8')">8</button>
+          <button type="button"  onclick="get('9')">9</button>
+          <button type="button"  class="signs" onclick="get('X')">X</button>
         </div>
         <div class="row-two">
-          <button type="button" id="four" onclick="number(4)">4</button>
-          <button type="button" id="five" onclick="number(5)">5</button>
-          <button type="button" id="six" onclick="number(6)">6</button>
-          <button
-            type="button"
-            onclick="operator('-')"
-            class="signs"
-            id="subtract"
-          >
-            -
-          </button>
+          <button type="button"  onclick="get('4')">4</button>
+          <button type="button"  onclick="get('5')">5</button>
+          <button type="button"  onclick="get('6')">6</button>
+          <button type="button"  class="signs" onclick="get('-')">-</button>
         </div>
         <div class="row-two">
-          <button type="button" id="one" onclick="number(1)">1</button>
-          <button type="button" id="two" onclick="number(2)">2</button>
-          <button type="button" id="three" onclick="number(3)">3</button>
-          <button
-            type="button"
-            onclick="operator('+')"
-            class="signs"
-            id="add"
-            onclick="addition()"
-          >
-            +
-          </button>
+          <button type="button"  onclick="get('1')">1</button>
+          <button type="button"  onclick="get('2')">2</button>
+          <button type="button"  onclick="get('3')">3</p>
+          <button type="button"  class="signs" onclick="get('+')">+</button>
         </div>
         <div class="row-two">
-          <button type="button" id="zero" onclick="number(0)">0</button>
-          <button type="button" id="hundred" onclick="number('00')">00</button>
-          <button type="button" id="point">.</button>
-          <button
-            type="button"
-            onclick="operator('=')"
-            class="signs"
-            id="equals"
-          >
-            =
-          </button>
+          <button type="button"  onclick="get('0')">0</button>
+          <button type="button"  onclick="get('00')">00</button>
+          <button type="button"  onclick="get('.')">.</button>
+          <button type="button"  class="signs" onclick="get('=')">=</button>
         </div>
       </div>
     </div>
-
-    <script src="./main.js"></script>
   </body>
 </html>

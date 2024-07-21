@@ -1,13 +1,19 @@
 let inputArray = [];
 
+
 function get(value) {
   console.log("you clicked", value);
-  if (value === "=") {
-    console.log("equals clicked, running calculation");
-    return calculate();
+  if (value === 'AC') {
+      clearDisplay();
+  } else if (value === '⬅') {
+      inputArray.pop();
+      document.getElementById('display').innerText = inputArray.join('');
+  } else if (value === '=') {
+      console.log("equals clicked, running calculation");
+      return calculate();
   } else {
-    document.getElementById("display").innerText += value;
-    inputArray.push(value);
+      document.getElementById('display').innerText += value;
+      inputArray.push(value);
   }
 }
 
@@ -31,12 +37,15 @@ function calculate() {
       case "/":
         result /= num;
         break;
+        case "%":
+          result = result % num;
+          break;
     }
   }
 
   for (let i = 0; i <= inputArray.length; i++) {
     const char = inputArray[i];
-    if (["+", "-", "X", "/"].includes(char) || i === inputArray.length) {
+    if (["+", "-", "X", "/","%"].includes(char) || i === inputArray.length) {
       console.log(
         "Char:",
         char,
@@ -52,9 +61,13 @@ function calculate() {
       currentNumber.push(char);
     }
   }
-
   inputArray = [];
   console.log("Result:", result);
   document.getElementById("result").innerText = result;
   return result;
+}
+function clearDisplay() {
+  inputArray = [];
+  document.getElementById('display').innerText = '';
+  document.getElementById('result').innerText = '';
 }

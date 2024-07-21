@@ -1,5 +1,3 @@
-
-
 let inputArray = [];
 
 function get(value) {
@@ -8,6 +6,7 @@ function get(value) {
     console.log("equals clicked, running calculation");
     return calculate();
   } else {
+    document.getElementById("display").innerText += value;
     inputArray.push(value);
   }
 }
@@ -56,5 +55,6 @@ function calculate() {
 
   inputArray = [];
   console.log("Result:", result);
+  document.getElementById("result").innerText = result;
   return result;
 }

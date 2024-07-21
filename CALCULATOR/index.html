@@ -10,14 +10,15 @@
   <body>
     <div class="container">
       <div class="text">
-        <p onclick="get('value')"></p>
+        <p id="display" ></p>
+        <p id="result"></p>
       </div>
       <div class="function">
         <div class="row-one">
           <button type="button" onclick="get('AC')">AC</button>
-          <button type="button"  onclick="get('⬅')">⬅</p>
+          <button type="button" class="arrow" onclick="get('⬅')">⬅</p>
           <button type="button"  onclick="get('%')">%</button>
-          <button type="button"  class="signs" onclick="get('/')">/</p>
+          <button type="button"  class="signs" id="divide" onclick="get('/')">/</p>
         </div>
         <div class="row-two">
           <button type="button"  onclick="get('7')">7</button>
@@ -40,10 +41,12 @@
         <div class="row-two">
           <button type="button"  onclick="get('0')">0</button>
           <button type="button"  onclick="get('00')">00</button>
-          <button type="button"  onclick="get('.')">.</button>
+          <button type="button"   onclick="get('.')">.</button>
           <button type="button"  class="signs" onclick="get('=')">=</button>
         </div>
       </div>
     </div>
+
+    <script src="./main.js"></script>
   </body>
 </html>
